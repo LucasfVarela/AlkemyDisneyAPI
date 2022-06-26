@@ -1,4 +1,5 @@
 ﻿using API.CoreBusiness.Entity;
+using API.CoreBusiness.Request;
 using API.CoreBusiness.Response;
 using AutoMapper;
 using System;
@@ -13,7 +14,7 @@ namespace API.UsesCases.Mapping
     {
         public MappingProfile()
         {
-            //CreateMap<RegisterRequest, Usuario>();
+            CreateMap<UserRequest, Usuario>();
             CreateMap<Usuario, UserResponse>();
             CreateMap<Personaje, PersonajeResponse>();
             CreateMap<PeliculaSerie, PeliculaResponse>();
