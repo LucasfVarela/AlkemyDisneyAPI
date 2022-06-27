@@ -33,7 +33,6 @@ namespace API.UsesCases.Services
         public IEnumerable<PersonajeResponse> GetFilter(string type, dynamic filter) =>
         type switch
             {
-                
                 "name" => GetByName(filter),
                 "age" => GetByEdad(filter),
                 "movie" => GetByPelicula(filter),

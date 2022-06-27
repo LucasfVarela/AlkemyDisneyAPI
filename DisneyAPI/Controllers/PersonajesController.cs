@@ -1,12 +1,14 @@
 ﻿using API.CoreBusiness.Entity;
 using API.UsesCases.Services.PluginInterfaces;
 using API.UsesCases.UnitOfWork;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DisneyAPI.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class PersonajesController : ControllerBase
     {

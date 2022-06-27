@@ -10,6 +10,6 @@ namespace API.UsesCases.Services.PluginInterfaces
     public interface IPersonajeService
     {
       public  IEnumerable<PersonajeResponse> Get();
-      public  IEnumerable<PersonajeResponse> GetFilter(string type, object filter);
+      public  IEnumerable<PersonajeResponse> GetFilter(string type, dynamic filter);
     }
 }
